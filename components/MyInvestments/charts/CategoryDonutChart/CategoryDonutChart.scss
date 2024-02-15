@@ -1,0 +1,22 @@
+@import "../../../../assets/sass/variables";
+@import "../../../../assets/sass/mixins";
+
+.category-chart-card{
+	transition: all 200ms ease-in-out;
+    background-color: #fcfcfc;
+    border-style: solid;
+    border-color: #c5c5c5;
+    border-radius: 20px;
+	height: 100%;
+
+	&-body{
+		padding-top: 10px;
+		border: none;
+		position: relative;
+		padding: 40px 0px 10px 0px;
+
+		@include desktop-small {
+			padding: 50px 0px 10px 0px;
+		}
+	}
+}

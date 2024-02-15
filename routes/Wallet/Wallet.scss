@@ -1,0 +1,118 @@
+@import '../../assets/sass/variables';
+@import '../../assets/sass/mixins';
+
+.no-data {
+	background-image: url("../../assets/images/nodata.png");
+	border: 0;
+	background-repeat: no-repeat;
+	padding-top: 180px;
+	background-position: top 20px center;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.load-more-btn {
+	margin-left: 40%;
+	@include rtl {
+		margin-right: 40%;
+	}
+}
+
+.wallet {
+
+	&-balance {
+		text-align: left;
+		@include rtl {
+			text-align: right;
+		}
+	}
+
+	&-id {
+		text-align: left;
+		@include rtl {
+			text-align: right;
+		}
+	}
+	&-btn-group {
+		display: inline;
+		text-align: right;
+		@include rtl {
+			text-align: left;
+		}
+
+		@include md-mobile {
+			margin-top: 20px;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+	}
+
+	&-topup-btn {
+		margin-right: 1rem !important;
+		float: right;
+		
+		@include rtl {
+			margin-left: 1rem !important;
+		}
+	}
+
+	&-data-amount {
+		max-width: 15rem;
+		word-break: break-all;
+		text-align: right;
+	}
+
+	&-data-popover {
+		padding: 10px 30px 10px 20px;
+		overflow: visible;
+		margin-right: 100px;
+		@include rtl {
+			margin-left: 100px;
+		}
+	}
+}
+.modal-title{
+	width: 100%;
+}
+.withdraw-balance {
+	margin-top: 1rem;
+	font-size: 1rem;
+	float: right;
+	@include rtl {
+		float: left;
+	}
+	@include md-mobile {
+		float: left;
+	}
+}
+.wallet-currency-symbol {
+	.custom-input-group-text {
+		top: 61px;
+	}
+	.form-control {
+		padding-left: 35px;
+		@include rtl {
+			padding-left: 0px;
+			padding-right: 35px;
+		}
+	}
+}
+
+.curreny-select {
+	@include md-mobile {
+		margin-bottom: 10px;
+	}
+}
+
+.currency-code {
+	margin-inline-start: 80%;
+	@include md-mobile {
+		margin-inline-start: 75%;
+	}
+	&-error {
+		margin-inline-start: 78% !important;
+		@include md-mobile {
+			margin-inline-start: 70% !important;
+		}
+	}
+}

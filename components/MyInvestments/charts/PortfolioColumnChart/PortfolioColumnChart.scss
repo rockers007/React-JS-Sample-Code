@@ -1,0 +1,47 @@
+@import "../../../../assets/sass/variables";
+@import "../../../../assets/sass/mixins";
+
+.chart-card {
+    background-color: #fcfcfc;
+	border-color: #c5c5c5;
+    border-radius: 20px;
+    border-style: solid;
+	transition: all 200ms ease-in-out;
+
+	&-body{
+		border: none;
+		padding: 10px;
+		position: relative;
+		margin: 3%;
+
+		@include desktop-small {
+			padding: 30px 20px;
+		}
+	}
+
+	&-investment { 
+		border-style: none;
+		border-radius: 30px;
+		@include box-shadow(0, 0, 30px, rgba(0, 0, 0, 0.10));
+	}
+
+	&-brief {
+		font-size: 23px;
+	}
+
+	&-repayment { 
+		background-color: #b0a8ca1e;
+		border-style: none;
+		border-radius: 30px;
+	}
+
+	&-year {
+		float: right;
+		border-radius: 20px;
+		background-color: $white;
+		width: 70%;
+		@include rtl {
+			float: left;
+		}
+	}
+}
